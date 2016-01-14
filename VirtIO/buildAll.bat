@@ -6,8 +6,8 @@
 : Use Windows 7 DDK
 if "%DDKVER%"=="" set DDKVER=7600.16385.1
 
-: By default DDK is installed under C:\WINDDK, but it can be installed in different location
-if "%DDKISNTALLROOT%"=="" set DDKISNTALLROOT=C:\WINDDK\
+: By default DDK is installed under D:\WINDDK, but it can be installed in different location
+if "%DDKISNTALLROOT%"=="" set DDKISNTALLROOT=D:\WINDDK\
 set BUILDROOT=%DDKISNTALLROOT%%DDKVER%
 set X64ENV=x64
 if "%DDKVER%"=="6000" set X64ENV=amd64
